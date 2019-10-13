@@ -1,0 +1,309 @@
+header {
+  background-color: #fff; }
+  header img.nav {
+    padding: 24px 24px 12px 24px;
+    cursor: pointer;
+    width: 20%;
+    max-width: 160px; }
+  header div.nav {
+    display: none; }
+  header div.on {
+    display: initial;
+    text-align: center; }
+    header div.on ul {
+      margin: 0;
+      padding: 0; }
+    header div.on li {
+      padding-bottom: 1em; }
+    header div.on a {
+      font-size: 20px;
+      color: black;
+      text-decoration: none;
+      font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif; }
+
+body {
+  background-color: #111;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif;
+  margin: 0;
+  border: 0;
+  padding: 0; }
+  body p {
+    margin-left: 24px; }
+
+.main {
+  margin: 0;
+  border: 0;
+  padding: 0; }
+
+.maintitle {
+  background-image: url(images/headimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .maintitle .title-sentence {
+    margin-left: 24px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif;
+    text-shadow: 2px  2px #000, -2px  2px #000, -2px -2px #000, 2px -2px #000; }
+    .maintitle .title-sentence h1 {
+      margin: 0;
+      font-size: 112px; }
+    .maintitle .title-sentence h2 {
+      margin-top: 0;
+      font-size: 84px; }
+    .maintitle .title-sentence h3 {
+      margin-top: 4px;
+      font-size: 56px; }
+    .maintitle .title-sentence .date {
+      text-align: right;
+      margin-right: 12px; }
+      .maintitle .title-sentence .date .chara {
+        font-size: 56px; }
+      .maintitle .title-sentence .date .num {
+        font-size: 84px; }
+
+.maincontents {
+  margin-left: 12px;
+  margin-right: 12px; }
+  .maincontents p {
+    margin: 1em 24px; }
+
+hr {
+  margin: 12px 0; }
+
+.iventinf h4 {
+  margin: 24px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif; }
+
+.linklist {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap; }
+  .linklist .leftboxes {
+    float: left;
+    flex-basis: 50%;
+    position: relative; }
+  .linklist .rightboxes {
+    flex-basis: 50%;
+    position: relative;
+    top: 70px; }
+  .linklist .stowage {
+    display: block;
+    justify-content: space-between;
+    border: solid;
+    border-width: medium;
+    border-color: #f00;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 4px; }
+    .linklist .stowage h5 {
+      margin-left: 18px;
+      color: #f00;
+      font-size: 28px; }
+    .linklist .stowage a {
+      text-decoration: none; }
+  .linklist .stowage:hover {
+    background-color: #333; }
+  .linklist .cover1 {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 34%;
+    top: 0%;
+    left: 0%;
+    background-color: #111; }
+  .linklist .cover2 {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 34%;
+    top: 33%;
+    left: 0;
+    background-color: #111; }
+  .linklist .cover3 {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 34%;
+    top: 66%;
+    left: 0;
+    background-color: #111; }
+
+.announce h4 {
+  margin: 24px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif; }
+.announce a {
+  font-size: 20px;
+  color: #fcc;
+  text-decoration: none;
+  font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif; }
+.announce a:hover {
+  font-size: 20px;
+  color: #f99; }
+
+.shinkaninf a {
+  font-size: 20px;
+  color: #fcc;
+  text-decoration: none;
+  font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif; }
+.shinkaninf a:hover {
+  font-size: 20px;
+  color: #f99; }
+
+.kikakuinf .kikaku-unit {
+  border: solid;
+  border-color: #f00;
+  border-radius: 25px;
+  border-width: thin;
+  margin-bottom: 12px; }
+  .kikakuinf .kikaku-unit h2 {
+    margin: 24px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif; }
+.kikakuinf .space {
+  margin-left: 3em; }
+.kikakuinf .mailadress {
+  font-style: oblique; }
+.kikakuinf a {
+  font-size: 20px;
+  color: #fcc;
+  text-decoration: none;
+  font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif; }
+.kikakuinf a:hover {
+  font-size: 20px;
+  color: #f99; }
+
+.stageinf a {
+  font-size: 20px;
+  color: #fcc;
+  text-decoration: none;
+  font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif; }
+.stageinf a:hover {
+  font-size: 20px;
+  color: #f99; }
+.stageinf object {
+  background-color: #fff; }
+
+.boothinf a {
+  font-size: 20px;
+  color: #fcc;
+  text-decoration: none;
+  font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif; }
+.boothinf a:hover {
+  font-size: 20px;
+  color: #f99; }
+.boothinf .searchText {
+  margin-right: 0;
+  margin-left: 24px;
+  padding: 0;
+  height: 42px;
+  width: 18em;
+  border-radius: 14px;
+  border-style: none; }
+.boothinf .searchText:focus {
+  outline: none; }
+.boothinf .button {
+  margin-left: 0;
+  padding: 0;
+  height: 42px;
+  width: 6em;
+  border-radius: 14px;
+  border-style: none;
+  background-color: #00bfff;
+  color: #fff; }
+.boothinf .button:focus {
+  outline: none; }
+.boothinf .shopBox {
+  border: solid;
+  border-color: #f00;
+  border-radius: 25px;
+  border-width: thin;
+  margin-bottom: 12px; }
+  .boothinf .shopBox .name {
+    margin: 24px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif; }
+
+.accessinf {
+  margin-bottom: 24px; }
+  .accessinf a {
+    font-size: 20px;
+    color: #fcc;
+    text-decoration: none;
+    font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif; }
+  .accessinf a:hover {
+    font-size: 20px;
+    color: #f99; }
+  .accessinf h2 {
+    margin: 24px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif; }
+  .accessinf object {
+    background-color: #fff; }
+
+.yukaconmain h2 {
+  margin: 24px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif; }
+.yukaconmain h3 {
+  margin: 24px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif; }
+.yukaconmain .yukaconprofile .profileblock {
+  margin-bottom: 48px; }
+.yukaconmain .yukaconprofile img {
+  width: 100%; }
+
+.sponsorinf a {
+  font-size: 20px;
+  color: #fcc;
+  text-decoration: none;
+  font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif; }
+
+footer {
+  padding-top: 2px;
+  background-color: #222; }
+  footer p {
+    margin: 1em 24px; }
+  footer a {
+    font-size: 20px;
+    color: #fcc;
+    text-decoration: none;
+    font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif; }
+  footer a:hover {
+    font-size: 20px;
+    color: #f99; }
+  footer small {
+    margin: 1em 24px; }
+
+::-webkit-scrollbar {
+  width: 5px; }
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  border-left: solid -1px #ececec; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #ddd;
+  box-shadow: none; }
+
+/*# sourceMappingURL=stylesheet.css.map */

@@ -1,0 +1,379 @@
+@charset "utf-8";
+
+$fontcolor: #fff;
+$themacolor: #f00;
+$subthemacolor: #fcc;
+$fontsize: 20px;
+$subsec-fontsize: 28px;
+$background-color: #111;
+
+@mixin subsection{
+  margin: 24px;
+  font-size: $subsec-fontsize;
+  font-weight: bold;
+  color: $fontcolor;
+  font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif;
+}
+
+@mixin linksentence($color){
+  font-size: $fontsize;
+  color: $color;
+  text-decoration: none;
+  font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif;
+}
+
+@mixin linkhover{
+  font-size: $fontsize;
+  color: #f99;
+}
+
+header{
+  background-color: #fff;
+  img.nav{
+    padding: 24px 24px 12px 24px;
+    cursor: pointer;
+    width: 20%;
+    max-width: 160px;
+  }
+  div.nav{
+    display: none;
+  }
+  div.on{
+    display: initial;
+    text-align: center;
+    ul{
+      margin: 0;
+      padding: 0;
+    }
+    li{
+      padding-bottom: 1em;
+    }
+    a{
+      @include linksentence(black);
+    }
+  }
+}
+
+body{
+  background-color: $background-color;
+  font-size: $fontsize;
+  color: $fontcolor;
+  font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  p{
+    margin-left: 24px;
+  }
+}
+
+.main{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.maintitle{
+  background-image: url(images/headimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .title-sentence{
+    margin-left: 24px;
+    color: $fontcolor;
+    font-weight: bold;
+    font-family: "Helvetica Neue", "Arial", "Yu Gothic", "YuGothic", sans-serif;
+    text-shadow: 2px  2px #000,
+                -2px  2px #000,
+                 -2px -2px #000,
+                 2px -2px #000;
+    h1{
+      margin: 0;
+      font-size: $subsec-fontsize*4;
+    }
+    h2{
+      margin-top: 0;
+      font-size: $subsec-fontsize*3;
+    }
+    h3{
+      margin-top: 4px;
+      font-size: $subsec-fontsize*2;
+    }
+    .date{
+      text-align: right;
+      margin-right: 12px;
+      .chara{
+        font-size: $subsec-fontsize*2;
+      }
+      .num{
+        font-size: $subsec-fontsize*3;
+      }
+    }
+  }
+}
+
+.maincontents{
+  margin-left: 12px;
+  margin-right: 12px;
+  p{
+    margin: 1em 24px;
+  }
+}
+
+hr{
+  margin: 12px 0;
+}
+
+.iventinf{
+  h4{
+    @include subsection;
+  }
+  .iventslide{
+    .right{
+
+    }
+    .center{
+
+    }
+    .left{
+
+    }
+  }
+}
+
+.linklist{
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  .leftboxes{
+    float: left;
+    flex-basis: 50%;
+    position: relative;
+  }
+  .rightboxes{
+    flex-basis: 50%;
+    position: relative;
+    top: 70px;
+  }
+  .stowage{
+    display: block;
+    justify-content: space-between;
+    border: solid;
+    border-width: medium;
+    border-color: $themacolor;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 4px;
+    h5{
+      margin-left: 18px;
+      color: $themacolor;
+      font-size: 28px;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+  .stowage:hover{
+    background-color: #333;
+  }
+  .cover1{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 34%;
+    top: 0%;
+    left: 0%;
+    background-color: #111;
+  }
+  .cover2{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 34%;
+    top: 33%;
+    left: 0;
+    background-color: #111;
+  }
+  .cover3{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 34%;
+    top: 66%;
+    left: 0;
+    background-color: #111;
+  }
+}
+
+.announce{
+  h4{
+    @include subsection;
+  }
+  a{
+    @include linksentence($subthemacolor);
+  }
+  a:hover{
+    @include linkhover;
+  }
+}
+
+.shinkaninf{
+  a{
+    @include linksentence($subthemacolor);
+  }
+  a:hover{
+    @include linkhover;
+  }
+}
+
+.kikakuinf{
+  .kikaku-unit{
+    border: solid;
+    border-color: $themacolor;
+    border-radius: 25px;
+    border-width: thin;
+    margin-bottom: 12px;
+    h2{
+      @include subsection;
+    }
+  }
+  .space{
+    margin-left: 3em;
+  }
+  .mailadress{
+    font-style: oblique;
+  }
+  a{
+    @include linksentence($subthemacolor);
+  }
+  a:hover{
+    @include linkhover;
+  }
+}
+
+.stageinf{
+  a{
+    @include linksentence($subthemacolor);
+  }
+  a:hover{
+    @include linkhover;
+  }
+  object{
+    background-color: #fff;
+  }
+}
+
+.boothinf{
+  a{
+    @include linksentence($subthemacolor);
+  }
+  a:hover{
+    @include linkhover;
+  }
+  .searchText{
+    margin-right: 0;
+    margin-left: 24px;
+    padding: 0;
+    height: 42px;
+    width: 18em;
+    border-radius: 14px;
+    border-style: none;
+  }
+  .searchText:focus{
+    outline: none;
+  }
+  .button{
+    margin-left: 0;
+    padding: 0;
+    height: 42px;
+    width: 6em;
+    border-radius: 14px;
+    border-style: none;
+    background-color: #00bfff;
+    color: #fff;
+  }
+  .button:focus{
+    outline: none;
+  }
+  .shopBox{
+    border: solid;
+    border-color: $themacolor;
+    border-radius: 25px;
+    border-width: thin;
+    margin-bottom: 12px;
+    .name{
+      @include subsection;
+    }
+  }
+}
+
+.accessinf{
+  a{
+    @include linksentence($subthemacolor);
+  }
+  a:hover{
+    @include linkhover;
+  }
+  h2{
+    @include subsection;
+  }
+  object{
+    background-color: #fff;
+  }
+  margin-bottom: 24px;
+}
+
+.yukaconmain{
+  h2{
+    @include subsection;
+  }
+  h3{
+    @include subsection;
+  }
+  .yukaconprofile{
+    .profileblock{
+      margin-bottom: 48px;
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
+
+.sponsorinf{
+  a{
+    @include linksentence($subthemacolor);
+  }
+}
+
+footer{
+  padding-top: 2px;
+  background-color: #222;
+  p{
+    margin: 1em 24px;
+  }
+  a{
+    @include linksentence($subthemacolor);
+  }
+  a:hover{
+    @include linkhover;
+  }
+  small{
+    margin: 1em 24px;
+  }
+}
+
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-track{
+  background: #fff;
+  border-left: solid -1px #ececec;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background: #ddd;
+  box-shadow: none;
+}

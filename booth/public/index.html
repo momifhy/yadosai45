@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>2019年度第45回筑波大学宿舎祭 やどかり祭</title>
+  <link href="../../css/stylesheet.css" rel="stylesheet" type='text/css'>
+  <link rel="shortcut icon" href="../../css/images/yadokari-kun.jpg">
+  <!-- Firebase App is always required and must be first -->
+  <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-database.js"></script>
+  <script type="text/javascript" src="./firebase.js"></script>
+  <script type="text/javascript" src="./scriptsheet.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96801375-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-96801375-1');
+  </script>
+</head>
+<body>
+  <header>
+    <div class="navigation">
+      <img id="navimg" class="nav" src="../../css/images/menuimage.png" alt="メニューボタン">
+      <div id="navcon" class="nav">
+        <ul>
+          <li>
+            <a href="../../index.html">トップ</a>
+          </li>
+          <li>
+            <a href="./booth/public/index.html">ブース</a>
+          </li>
+          <li>
+            <a href="../../kikaku.html">企画一覧</a>
+          </li>
+          <li>
+            <a href="../../access.html">会場アクセス</a>
+          </li>
+          <li>
+            <a href="../../stage.html">ステージ情報</a>
+          </li>
+          <li>
+            <a href="../../yukacon.html">ゆかコン</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="maincontents">
+    <div class="boothinf">
+      <h1>模擬店検索</h1>
+      <p>出店エリア対応マップ：<a href="../../booth_map.pdf" target="_blank">booth_map.pdf</a></p>
+      <input type="text" class="searchText" id="searchText" placeholder="  検索ワード">
+      <input type="button" class="button" id="button" value="検索" onclick="onButtomClick();">
+      <hr>
+      <div class="shoplist" id="shoplist"></div>
+    </div>
+  </div>
+  <footer>
+    <p>
+      <a href="https://www.stb.tsukuba.ac.jp/~yadokari/mogiten/index.html">模擬店出店団体の方へ</a>
+    </p>
+    <p>
+      <a href="../../shinkan.html">新歓情報はこちら</a>
+    </p>
+    <p>
+      <a href="../../sponsor.html">協賛団体一覧</a>
+    </p>
+    <small>&copy;2019年度第45回宿舎祭実行委員会</small>
+  </footer>
+  <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCROhWewwpKWQTtvN0ZabQ8g32rb9kbR-E",
+    authDomain: "yadosai-45.firebaseapp.com",
+    databaseURL: "https://yadosai-45.firebaseio.com",
+    projectId: "yadosai-45",
+    storageBucket: "yadosai-45.appspot.com",
+    messagingSenderId: "380240072974",
+    appId: "1:380240072974:web:2efb00f833d1b31e"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</body>
